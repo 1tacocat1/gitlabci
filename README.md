@@ -36,10 +36,10 @@ This pipeline integration has been deprecated and replaced with the NowSecure CI
         - if: $CI_COMMIT_TAG
             variables:
               NS_ANALYSIS_TYPE: full
-          - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-            variables:
-              NS_ANALYSIS_TYPE: full
-          - when: never
+        - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+          variables:
+            NS_ANALYSIS_TYPE: full
+        - when: never
     ```
 
 
