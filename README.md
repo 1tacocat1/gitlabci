@@ -14,7 +14,7 @@ This pipeline integration has been deprecated and replaced with the NowSecure CI
     script:
       - nowsecure.sh
     ```
-2. Add the component as per the Readme. If you want to leverage the same Environment Variable names noted below, the configuration would be similar to:
+2. Add the component as per the component's Readme. If you want to leverage the same Environment Variable names noted below, the configuration would be similar to:
     ```yaml
     include:
       - component: $CI_SERVER_FQDN/nowsecure/eng/platform-infrastructure/nowsecure-ci-component/nowsecure-ci-component@<tag>
